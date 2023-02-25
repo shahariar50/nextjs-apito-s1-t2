@@ -2,7 +2,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 type mainLayoutProps = {
-  children: React.ReactElement;
+  children: React.ReactNode;
 };
 
 const MainLayout: React.FC<mainLayoutProps> = ({ children }) => {
