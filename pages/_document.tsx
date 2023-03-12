@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import { Head, Html, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -15,6 +16,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript></NextScript>
+        {/* <script type="text/javascript" src="/static/js/swipe.js"></script> */}
       </body>
     </Html>
   );
