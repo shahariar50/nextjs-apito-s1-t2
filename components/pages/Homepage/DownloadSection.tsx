@@ -58,7 +58,7 @@ const DownloadSection = () => {
             <picture>
               <img
                 className="d-none d-lg-inline-block"
-                src="./assets/img/illustrations/scene-3.svg"
+                src="/static/img/illustrations/scene-3.svg"
                 alt="Mobile App Illustration"
               />
             </picture>
