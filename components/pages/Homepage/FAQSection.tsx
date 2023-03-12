@@ -1,4 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
+
+import { Accordion } from "react-bootstrap";
+
 const FAQSection = () => {
   return (
     <section className="section section-lg" id="faq">
@@ -15,33 +18,20 @@ const FAQSection = () => {
         </div>
         <div className="row justify-content-center">
           <div className="col-12 col-md-10">
-            <div className="accordion" id="accordionExample">
-              <div className="card border-light mb-0">
-                <div className="card-header" id="headingOne">
+            <Accordion
+              defaultActiveKey="0"
+              className="accordion"
+              id="accordionExample"
+            >
+              <Accordion.Item eventKey="0" className="card border-light mb-0">
+                <Accordion.Header className="card-header">
                   <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-block d-flex justify-content-between text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <span className="h6 mb-0 font-weight-bold">
-                        What is the purpose of a FAQ?
-                      </span>
-                      <span className="icon">
-                        <span className="fas fa-plus"></span>
-                      </span>
-                    </button>
+                    <span className="h6 mb-0 font-weight-bold">
+                      What is the purpose of a FAQ?
+                    </span>
                   </h2>
-                </div>
-                <div
-                  id="collapseOne"
-                  className="collapse show"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
+                </Accordion.Header>
+                <Accordion.Body>
                   <div className="card-body">
                     <p className="mb-0">
                       At Themesberg, our mission has always been focused on
@@ -53,34 +43,17 @@ const FAQSection = () => {
                       continue building a product that supports this vision.
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="card border-light mb-0">
-                <div className="card-header" id="headingTwo">
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1" className="card border-light mb-0">
+                <Accordion.Header className="card-header">
                   <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-block d-flex justify-content-between text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <span className="h6 mb-0 font-weight-bold">
-                        What is a FAQ document?
-                      </span>
-                      <span className="icon">
-                        <span className="fas fa-plus"></span>
-                      </span>
-                    </button>
+                    <span className="h6 mb-0 font-weight-bold">
+                      What is a FAQ document?
+                    </span>
                   </h2>
-                </div>
-                <div
-                  id="collapseTwo"
-                  className="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionExample"
-                >
+                </Accordion.Header>
+                <Accordion.Body>
                   <div className="card-body">
                     <p className="mb-0">
                       At Themesberg, our mission has always been focused on
@@ -92,34 +65,17 @@ const FAQSection = () => {
                       continue building a product that supports this vision.
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="card border-light mb-0">
-                <div className="card-header" id="headingThree">
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="3" className="card border-light mb-0">
+                <Accordion.Header className="card-header">
                   <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-block d-flex justify-content-between text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <span className="h6 mb-0 font-weight-bold">
-                        What are the top 10 interview questions?
-                      </span>
-                      <span className="icon">
-                        <span className="fas fa-plus"></span>
-                      </span>
-                    </button>
+                    <span className="h6 mb-0 font-weight-bold">
+                      What are the top 10 interview questions?
+                    </span>
                   </h2>
-                </div>
-                <div
-                  id="collapseThree"
-                  className="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordionExample"
-                >
+                </Accordion.Header>
+                <Accordion.Body>
                   <div className="card-body">
                     <p className="mb-0">
                       At Themesberg, our mission has always been focused on
@@ -131,32 +87,15 @@ const FAQSection = () => {
                       continue building a product that supports this vision.
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="card border-light mb-0">
-                <div className="card-header" id="headingFour">
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="4" className="card border-light mb-0">
+                <Accordion.Header className="card-header">
                   <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-block d-flex justify-content-between text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      <span className="h6 mb-0 font-weight-bold">Cookies?</span>
-                      <span className="icon">
-                        <span className="fas fa-plus"></span>
-                      </span>
-                    </button>
+                    <span className="h6 mb-0 font-weight-bold">Cookies?</span>
                   </h2>
-                </div>
-                <div
-                  id="collapseFour"
-                  className="collapse"
-                  aria-labelledby="headingFour"
-                  data-parent="#accordionExample"
-                >
+                </Accordion.Header>
+                <Accordion.Body>
                   <div className="card-body">
                     <p className="mb-0">
                       At Themesberg, our mission has always been focused on
@@ -168,34 +107,17 @@ const FAQSection = () => {
                       continue building a product that supports this vision.
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="card border-light mb-0">
-                <div className="card-header" id="headingFive">
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="5" className="card border-light mb-0">
+                <Accordion.Header className="card-header">
                   <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-block d-flex justify-content-between text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      <span className="h6 mb-0 font-weight-bold">
-                        Copyright Notice
-                      </span>
-                      <span className="icon">
-                        <span className="fas fa-plus"></span>
-                      </span>
-                    </button>
+                    <span className="h6 mb-0 font-weight-bold">
+                      Copyright Notice
+                    </span>
                   </h2>
-                </div>
-                <div
-                  id="collapseFive"
-                  className="collapse"
-                  aria-labelledby="headingFive"
-                  data-parent="#accordionExample"
-                >
+                </Accordion.Header>
+                <Accordion.Body>
                   <div className="card-body">
                     <p className="mb-0">
                       At Themesberg, our mission has always been focused on
@@ -207,9 +129,9 @@ const FAQSection = () => {
                       continue building a product that supports this vision.
                     </p>
                   </div>
-                </div>
-              </div>
-            </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </div>
       </div>

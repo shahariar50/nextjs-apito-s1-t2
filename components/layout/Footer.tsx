@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="footer py-5 pt-lg-6">
-      <div className="sticky-left d-flex align-items-center bg-white p-3 pt-4 px-4 border border-soft shadow-sm rounded">
+      {/* <div className="sticky-left d-flex align-items-center bg-white p-3 pt-4 px-4 border border-soft shadow-sm rounded">
         <span className="mr-3 d-block font-small mb-1">Open source ❤️</span>
         <a
           className="github-button"
@@ -14,7 +14,7 @@ const Footer = () => {
         >
           Star
         </a>
-      </div>
+      </div> */}
       <div className="sticky-right">
         <a
           href="#home"
